@@ -42,49 +42,49 @@ Boot the Galaxy S2 in recovery mode. To do this, press and hold the `Volume Up` 
 
 Use the volume keys to navigate to the `apply update from external storage` item and confirm with the power button. Now navigate to `PhilZ-cwm6-XWMS3-FOP-5.15.9-signed.zip` and confirm with the power button. The Philz Recovery should now be loaded.
 
-![](./img/Los01.jpg)
-![](./img/Los02.jpg)
-![](./img/Los03.jpg)
-![](./img/Los04.jpg)
+<img src="./img/Los01.jpg" width="350"/>
+<img src="./img/Los02.jpg" width="350"/>
+<img src="./img/Los03.jpg" width="350"/>
+<img src="./img/Los04.jpg" width="350"/>
 
 Now navigate back to `../` and confirm. Here you have to select the item `reboot system now`. After restarting the Galaxy S2, it must be switched off again and restarted in recovery mode. If your Galaxy S2 gets stuck at this point (happened during my test attempts), simply remove the battery briefly, insert it again and start in recovery mode. The recovery menu now looks very different.
 
-![](./img/Los05.jpg)
-![](./img/Los06.jpg)
+<img src="./img/Los05.jpg" width="350"/>
+<img src="./img/Los06.jpg" width="350"/>
 
 First go to the `Backup and Restore` item and select `Custom Backup and Restore` and then `Custom Backup Job`. At this point you can choose which points should be saved. I personally use the items `Backup boot`, `Backup recovery`, `Backup system`, `Backup data`, `Backup Cache` and `Backup modem`. Finally, click `Start Custom Backup Job`. Now select `Backup to External sdcard`.
 
-![](./img/Los08.jpg)
-![](./img/Los09.jpg)
-![](./img/Los10.jpg)
-![](./img/Los11.jpg)
-![](./img/Los12.jpg)
-![](./img/Los13.jpg)
-![](./img/Los07.jpg)
+<img src="./img/Los08.jpg" width="350"/>
+<img src="./img/Los09.jpg" width="350"/>
+<img src="./img/Los10.jpg" width="350"/>
+<img src="./img/Los11.jpg" width="350"/>
+<img src="./img/Los12.jpg" width="350"/>
+<img src="./img/Los13.jpg" width="350"/>
+<img src="./img/Los07.jpg" width="350"/>
 
 In a second step, go to the `Custom Backup Job` menu again and only select the `Backup EFS` item. Here again select `Start Custom Backup Job` and `Backup to external sdcard`. Unfortunately, you have to do this separately, as there is no way to back up both together with this recovery. Now that you have saved everything, go back to the beginning via the menu item `Go Back`. Here select `Wipe Data / Factory Reset`. On the next page, select `Wipe Data / Factory Reset` again and then navigate to `Yes` and confirm. When that's done, go back to the home page.
 
-![](./img/Los14.jpg)
-![](./img/Los15.jpg)
-![](./img/Los16.jpg)
-![](./img/Los17.jpg)
-![](./img/Los18.jpg)
-![](./img/Los19.jpg)
-![](./img/Los20.jpg)
+<img src="./img/Los14.jpg" width="350"/>
+<img src="./img/Los15.jpg" width="350"/>
+<img src="./img/Los16.jpg" width="350"/>
+<img src="./img/Los17.jpg" width="350"/>
+<img src="./img/Los18.jpg" width="350"/>
+<img src="./img/Los19.jpg" width="350"/>
+<img src="./img/Los20.jpg" width="350"/>
 
 Select `Install Zip` in the start menu. Here we first flash the downloaded ISO Rec Kernel, ie `kernel-Lanchon-20160406-cm-13.0-i9100.zip` and then the file `recovery-the.gangster-IsoRec-TWRP-3.0.2-1-i9100-with-preload-support.zip`.
 
 To do this, select `Choose zip from sdcard` and first install `kernel-Lanchon-20160406-cm-13.0-i9100.zip`. In the second step, select `Choose zip from sdcard` again and select `recovery-the.gangster-IsoRec-TWRP-3.0.2-1-i9100-with-preload-support.zip`. After flashing these two files go back to the start menu page and click `Reboot System Now`. The Galaxy S2 should now start directly in recovery, but in the TWRP recovery that we just installed. If your Galaxy S2 gets stuck at this point again (happened during my test attempts), simply remove the battery briefly, insert it again and manually start in recovery mode.
 
-![](./img/Los21.jpg)
-![](./img/Los22.jpg)
-![](./img/Los23.jpg)
-![](./img/Los24.jpg)
-![](./img/Los25.jpg)
-![](./img/Los26.jpg)
-![](./img/Los27.jpg)
-![](./img/Los28.jpg)
-![](./img/Los29.jpg)
+<img src="./img/Los21.jpg" width="350"/>
+<img src="./img/Los22.jpg" width="350"/>
+<img src="./img/Los23.jpg" width="350"/>
+<img src="./img/Los24.jpg" width="350"/>
+<img src="./img/Los25.jpg" width="350"/>
+<img src="./img/Los26.jpg" width="350"/>
+<img src="./img/Los27.jpg" width="350"/>
+<img src="./img/Los28.jpg" width="350"/>
+<img src="./img/Los29.jpg" width="350"/>
 
 Here, first go to `Select Language` and set it to your language of choice.
 
@@ -105,22 +105,22 @@ Click on `Install`. Click on `Select Storage` and switch to `External Storage`, 
 
 Select `lanchon-repit-20170115-system=2G+wipe-data=6G+wipe-sdcard=max+wipe-preload=min+wipe-i9100.zip` (or however you changed the file name). Simply tap on the file and in the next window move the slider (`Swipe to confirm Flash`) from left to right. For many, an error may now arise because something did not fit when mounting sdcard1. This is not a problem, because the installation file has now been automatically saved to a tmp folder in the system partition.
 
-![](./img/Los30.jpg)
-![](./img/Los31.jpg)
-![](./img/Los32.jpg)
-![](./img/Los33.jpg)
-![](./img/Los35.jpg)
+<img src="./img/Los30.jpg" width="350"/>
+<img src="./img/Los31.jpg" width="350"/>
+<img src="./img/Los32.jpg" width="350"/>
+<img src="./img/Los33.jpg" width="350"/>
+<img src="./img/Los35.jpg" width="350"/>
 
 For this we go back one step using the lower screen buttons so that we are back in the file overview of the Micro SD card. Here we click on `(Up A Level)` above, until we are in the root folder. Scroll down here, to the `tmp` folder and tap it once. Now you should see our installation script again. Tap this. Now confirm the installation again and the script should run without an error message. Once it says `done` below, click `Wipe cache/dalvik` and swipe to confirm. go back one step using the lower screen buttons and go to the root folder. Select `sdcard1` and you are back to the file overview with our copied files.
 
-![](./img/Los36.jpg)
-![](./img/Los38.jpg)
-![](./img/Los39.jpg)
-![](./img/Los40.jpg)
-![](./img/Los41.jpg)
-![](./img/Los42.jpg)
-![](./img/Los43.jpg)
-![](./img/Los44.jpg)
+<img src="./img/Los36.jpg" width="350"/>
+<img src="./img/Los38.jpg" width="350"/>
+<img src="./img/Los39.jpg" width="350"/>
+<img src="./img/Los40.jpg" width="350"/>
+<img src="./img/Los41.jpg" width="350"/>
+<img src="./img/Los42.jpg" width="350"/>
+<img src="./img/Los43.jpg" width="350"/>
+<img src="./img/Los44.jpg" width="350"/>
 
 Here first tap on `lineage-14.1-20181216-nightly-i9100-signed.zip`. In the next window, select `Add more zips` and tap on `open_gapps-arm-7.1-nano-20200502.zip`.
 
@@ -130,16 +130,16 @@ The last thing to do is to swipe to confirm flash again to flash the selected fi
 
 LineageOS 14.1 should now start. The start-up process takes a little time the first time.
 
-![](./img/Los45.jpg)
-![](./img/Los46.jpg)
-![](./img/Los48.jpg)
-![](./img/Los49.jpg)
-![](./img/Los50.jpg)
-![](./img/Los51.jpg)
-![](./img/Los52.jpg)
-![](./img/Los53.jpg)
-![](./img/Los54.jpg)
-![](./img/Los55.jpg)
+<img src="./img/Los45.jpg" width="350"/>
+<img src="./img/Los46.jpg" width="350"/>
+<img src="./img/Los48.jpg" width="350"/>
+<img src="./img/Los49.jpg" width="350"/>
+<img src="./img/Los50.jpg" width="350"/>
+<img src="./img/Los51.jpg" width="350"/>
+<img src="./img/Los52.jpg" width="350"/>
+<img src="./img/Los53.jpg" width="350"/>
+<img src="./img/Los54.jpg" width="350"/>
+<img src="./img/Los55.jpg" width="350"/>
 
 
 ## Post Installation
