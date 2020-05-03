@@ -1,4 +1,10 @@
-### Preliminary Information
+# Instructions
+- [Preliminary Notes](#preliminary-notes)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Post Installation](#post-installation)
+
+## Preliminary Notes
 In addition to various files that you have to download, you will also have to change the file system of the Galaxy S2. 
 
 As you know, the Galaxy S2 didn't have too much memory. In particular, the memory for the system was very limited at 512 MB. For the Android versions up to KitKat, the whole thing was still sufficient. Starting with Android Lollipop, things got pretty tight because not only the Android version but also the standard Google Apps are installed in the system partition. Since Android Marshmallow there is no longer enough space.
@@ -7,7 +13,7 @@ Therefore, you not only have to flash [LineageOS](https://download.lineageos.org
 
 **Attention:** I am assuming with these instructions that an original Samsung firmware Android 4.1.2 is installed on the Galaxy S2 and that its data, if it is still being used, is backed up in advance. If you have already installed a Custom Rom on your Galaxy S2, you may have to do it differently.
 
-### Prerequisites
+## Prerequisites
 To install LineageOS v14.1, all of the following files must be copied to the MicroSD card that you will insert into the Galaxy S2:
 - [LineageOS](./bin/lineage-14.1-20181216-nightly-i9100-signed.zip). *Attention: at lineageos.org support for the Galaxy S2 i9100 is no longer available. I cannot say at the moment whether this will happen again in the future or whether Lineage has stopped further development. We have therefore downloaded the last Nightly from December 16 2018.* For further versions you have to either go via the built-in update function (to be found in the settings) or you check out the XDA forum from time to time.
 - [Gapps](https://opengapps.org/) (Google Apps) The Open GApps Project (ARM / Android 7.1 / desired variant - I prefer [Nano](open_gapps-arm-7.1-nano-20200502.zip) to maximum Mini, because everything else on Google Apps can be installed from the Play Store)
@@ -31,7 +37,7 @@ If you want, you can of course also take a smaller size. Because the size I pref
 
 `lanchon-repit-20170115-system=1.5G+wipe-data=4G+wipe-sdcard=max+wipe-preload=min+wipe-i9100.zip`. So later you would not only have about 6 GB as an internal SD card, but 8.5 GB.
 
-### Instructions
+## Installation
 Boot the Galaxy S2 in recovery mode. To do this, press and hold the `Volume Up` + `Home` + `Power` simultaneously until the Android logo appears.
 
 Use the volume keys to navigate to the `apply update from external storage` item and confirm with the power button. Now navigate to `PhilZ-cwm6-XWMS3-FOP-5.15.9-signed.zip` and confirm with the power button. The Philz Recovery should now be loaded.
