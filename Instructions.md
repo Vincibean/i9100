@@ -1,11 +1,14 @@
 ### Preliminary Information
-In addition to various files that we have to download, the file system of the Galaxy S2 must also be changed. As you know, the Galaxy S2 didn't have too much memory. In particular, the memory for the system was very limited at 512 MB. For the Android versions up to KitKat, the whole thing was still sufficient. Starting with Android Lollipop, things got pretty tight because not only the Android version but also the standard Google Apps are installed in the system partition. However, since Android Marshmallow at the latest, there is no longer enough space.
+In addition to various files that you have to download, you will also have to change the file system of the Galaxy S2. 
 
-Therefore, we not only have to flash [Lineage OS](https://download.lineageos.org/i9100), but also change the partition sizes beforehand. The use of a MicroSD card is definitely helpful here with the Galaxy S2 - especially after installing Lineage OS - because the "enlargement" of the system partitions means that the total memory available is smaller.
+As you know, the Galaxy S2 didn't have too much memory. In particular, the memory for the system was very limited at 512 MB. For the Android versions up to KitKat, the whole thing was still sufficient. Starting with Android Lollipop, things got pretty tight because not only the Android version but also the standard Google Apps are installed in the system partition. Since Android Marshmallow there is no longer enough space.
+
+Therefore, you not only have to flash [Lineage OS](https://download.lineageos.org/i9100), but also change the partition size beforehand. The use of a MicroSD card is definitely helpful here with the Galaxy S2 - especially after installing Lineage OS - because the "enlargement" of the system partitions means that the total memory available is smaller.
 
 **Attention:** I am assuming with these instructions that an original Samsung firmware Android 4.1.2 is installed on the Galaxy S2 and that its data, if it is still being used, is backed up in advance. If you have already installed a Custom Rom on your Galaxy S2, you may have to do it differently.
 
-So what do we need to install Lineage 14.1 (all files must be copied to the micro SD card that has to be inserted into the Galaxy S2):
+### Prerequisites
+To install Lineage OS v14.1, all of the following files must be copied to the MicroSD card that you will insert into the Galaxy S2:
 - [Lineage OS](./bin/lineage-14.1-20181216-nightly-i9100-signed.zip). *Attention: at lineageos.org support for the Galaxy S2 i9100 is no longer available. I cannot say at the moment whether this will happen again in the future or whether Lineage has stopped further development. We have therefore downloaded the last Nightly from December 16 2018.* For further versions you have to either go via the built-in update function (to be found in the settings) or you check out the XDA forum from time to time.
 - [Gapps](https://opengapps.org/) (Google Apps) The Open GApps Project (ARM / Android 7.1 / desired variant - I prefer [Nano](open_gapps-arm-7.1-nano-20200502.zip) to maximum Mini, because everything else on Google Apps can be installed from the Play Store)
 - If you want to root, you still need the [SU Addon](addonsu-14.1-arm-signed.zip) (Version 14.1 in the ARM variant), because there is no root in Lineage.
@@ -14,7 +17,7 @@ So what do we need to install Lineage 14.1 (all files must be copied to the micr
 - [The Gangsters TWRP](./bin/recovery-the.gangster-IsoRec-TWRP-3.0.2-1-i9100-WITH-PRELOAD-SUPPORT.zip)
 - [Lanchons script for changing the partitions](lanchon-repit-20170115-system=2G+wipe-data=6G+wipe-sdcard=max+wipe-preload=min+wipe-i9100.zip)
 
-Now comes the preparatory work. For this you should definitely use an SD card in the Galaxy S2. First of all, the downloaded files should be copied to the SD card, because the memory of the Galaxy S2 must definitely be completely deleted during the installation.
+Now comes the preparatory work. For this you should definitely use a MicroSD card in the Galaxy S2. First of all, the downloaded files should be copied to the MicroSD card, because the memory of the Galaxy S2 must definitely be completely deleted during the installation.
 
 **Attention:** don't change the name of the name of the Lanchons script file. The partitioning is changed using the name of the file.
 
@@ -132,10 +135,13 @@ Lineage OS 14.1 should now start. The start-up process takes a little time the f
 ![](./img/Los54.jpg)
 ![](./img/Los55.jpg)
 
+
+## Post Installation
 **Note:** Lineage OS is still being developed for the Galaxy S2 i9100. In each version there may be errors or functions not included.
 
-**Note:** To activate Root, you first have to go to `Settings`, `About phone` and tap the `Build number` 7 times so that the developer options are activated. 
+To activate Root, you first have to go to `Settings`, `About phone` and tap the `Build number` 7 times so that the developer options are activated. 
 You will find the `Developer options` item in `Settings` directly above `About phone`. Open the `Developer options` and scroll down to `Root access`. Tap once and select the one you want. I have `Apps and ADB`.
+
 Since you are already there, you can also activate `Android Debugging` (a.k.a. USB debugging) and `Advanced restart`.
 
-Use the micro SD card in the system as `internal storage` and not as mobile storage (to use the SD card in other devices or card readers), because only in this way is there enough memory in the Galaxy S2 to be able to use it really well. But be careful, back up the files that are on the SD card, because when connecting to the internal memory, the data on it might be deleted.
+Use the MicroSD card in the system as `internal storage` and not as mobile storage (to use the SD card in other devices or card readers), because only in this way is there enough memory in the Galaxy S2 to be able to use it really well. But be careful, back up the files that are on the SD card, because when connecting to the internal memory, the data on it might be deleted.
