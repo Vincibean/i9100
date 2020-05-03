@@ -3,13 +3,13 @@ In addition to various files that you have to download, you will also have to ch
 
 As you know, the Galaxy S2 didn't have too much memory. In particular, the memory for the system was very limited at 512 MB. For the Android versions up to KitKat, the whole thing was still sufficient. Starting with Android Lollipop, things got pretty tight because not only the Android version but also the standard Google Apps are installed in the system partition. Since Android Marshmallow there is no longer enough space.
 
-Therefore, you not only have to flash [Lineage OS](https://download.lineageos.org/i9100), but also change the partition size beforehand. The use of a MicroSD card is definitely helpful here with the Galaxy S2 - especially after installing Lineage OS - because the "enlargement" of the system partitions means that the total memory available is smaller.
+Therefore, you not only have to flash [LineageOS](https://download.lineageos.org/i9100), but also change the partition size beforehand. The use of a MicroSD card is definitely helpful here with the Galaxy S2 - especially after installing LineageOS - because the "enlargement" of the system partitions means that the total memory available is smaller.
 
 **Attention:** I am assuming with these instructions that an original Samsung firmware Android 4.1.2 is installed on the Galaxy S2 and that its data, if it is still being used, is backed up in advance. If you have already installed a Custom Rom on your Galaxy S2, you may have to do it differently.
 
 ### Prerequisites
-To install Lineage OS v14.1, all of the following files must be copied to the MicroSD card that you will insert into the Galaxy S2:
-- [Lineage OS](./bin/lineage-14.1-20181216-nightly-i9100-signed.zip). *Attention: at lineageos.org support for the Galaxy S2 i9100 is no longer available. I cannot say at the moment whether this will happen again in the future or whether Lineage has stopped further development. We have therefore downloaded the last Nightly from December 16 2018.* For further versions you have to either go via the built-in update function (to be found in the settings) or you check out the XDA forum from time to time.
+To install LineageOS v14.1, all of the following files must be copied to the MicroSD card that you will insert into the Galaxy S2:
+- [LineageOS](./bin/lineage-14.1-20181216-nightly-i9100-signed.zip). *Attention: at lineageos.org support for the Galaxy S2 i9100 is no longer available. I cannot say at the moment whether this will happen again in the future or whether Lineage has stopped further development. We have therefore downloaded the last Nightly from December 16 2018.* For further versions you have to either go via the built-in update function (to be found in the settings) or you check out the XDA forum from time to time.
 - [Gapps](https://opengapps.org/) (Google Apps) The Open GApps Project (ARM / Android 7.1 / desired variant - I prefer [Nano](open_gapps-arm-7.1-nano-20200502.zip) to maximum Mini, because everything else on Google Apps can be installed from the Play Store)
 - If you want to root, you still need the [SU Addon](addonsu-14.1-arm-signed.zip) (Version 14.1 in the ARM variant), because there is no root in Lineage.
 - [PhilzTouch Recovery 5.15.9](./bin/PhilZ-cwm6-XWMS3-FOP-5.15.9-signed.zip)
@@ -91,7 +91,7 @@ If you accidentally clicked on `Keep System Read only`, in the recovery menu go 
 
 At this point one may ask why we first installed Philz Recovery to install the TWRP recovery instead of immediately installing the TWRP recovery. This is because the IsoRec kernel had to be flashed before the TWRP recovery. Only then can the TWRP Recovery be installed, otherwise it would not work correctly.
 
-Now comes the most important part, because to be able to install Lineage OS you have to adapt the file system of the Galaxy S2.
+Now comes the most important part, because to be able to install LineageOS you have to adapt the file system of the Galaxy S2.
 
 There is also a possibility to change the partitioning via a .pit file with Odin, but I find the variant presented here with Lanchon's script much easier and above all, you can do everything via TWRP. So you can continue with Lineage and the rest immediately after changing the partition.
 
@@ -122,7 +122,7 @@ If you also want to have root access, select `Add more zips` again and then sele
 
 The last thing to do is to swipe to confirm flash again to flash the selected files. After all files have been flashed, the message `done` appears again. Here you should definitely select the `Wipe cache/dalvik`. Only then you should `Reboot System`. 
 
-Lineage OS 14.1 should now start. The start-up process takes a little time the first time.
+LineageOS 14.1 should now start. The start-up process takes a little time the first time.
 
 ![](./img/Los45.jpg)
 ![](./img/Los46.jpg)
@@ -137,7 +137,7 @@ Lineage OS 14.1 should now start. The start-up process takes a little time the f
 
 
 ## Post Installation
-**Note:** Lineage OS is still being developed for the Galaxy S2 i9100. In each version there may be errors or functions not included.
+**Note:** LineageOS is still being developed for the Galaxy S2 i9100. In each version there may be errors or functions not included.
 
 To activate Root, you first have to go to `Settings`, `About phone` and tap the `Build number` 7 times so that the developer options are activated. 
 You will find the `Developer options` item in `Settings` directly above `About phone`. Open the `Developer options` and scroll down to `Root access`. Tap once and select the one you want. I have `Apps and ADB`.
